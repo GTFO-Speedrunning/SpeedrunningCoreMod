@@ -1,0 +1,35 @@
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened? What went wrong?
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: mod-list
+    attributes:
+      label: Mod List
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. Logs can be found at `%USERPROFILE%\AppData\LocalLow\10 Chambers Collective\GTFO` and in game folder.
